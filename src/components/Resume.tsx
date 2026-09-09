@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url
+  import.meta.url,
 ).toString();
 
 export default function Resume() {
@@ -25,7 +25,14 @@ export default function Resume() {
   }, []);
 
   return (
-    <div className='flex justify-center w-full min-h-0 px-4'>
+    <div className='flex flex-col items-center w-full min-h-0 px-4 gap-4'>
+      <a
+        href='/Resume1.pdf'
+        download='Emma_Radtke_Resume.pdf'
+        className='rounded-2xl px-4 py-2 bg-pink-400 text-white hover:bg-pink-500 cursor-pointer'
+      >
+        Download Resume
+      </a>
       <div ref={containerRef} className='w-full max-w-3xl'>
         <Document
           file='/Resume1.pdf'

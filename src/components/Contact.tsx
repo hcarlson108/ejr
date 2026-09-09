@@ -83,7 +83,7 @@ export default function Contact() {
               <div className='flex flex-col flex-1'>
                 <label htmlFor=''>First</label>
                 <input
-                  className='border-2 border-pink-500 w-full'
+                  className='border-2 border-pink-500 w-full text-neutral-800 placeholder-neutral-400'
                   type='text'
                   name='firstName'
                 />
@@ -91,7 +91,7 @@ export default function Contact() {
               <div className='flex flex-col flex-1'>
                 <label htmlFor=''>Last</label>
                 <input
-                  className='border-2 border-pink-500 w-full'
+                  className='border-2 border-pink-500 w-full text-neutral-800 placeholder-neutral-400'
                   type='text'
                   name='lastName'
                 />
@@ -101,7 +101,7 @@ export default function Contact() {
             <div className='flex flex-col mt-2'>
               <label htmlFor=''>Subject</label>
               <input
-                className='border-2 border-pink-500 w-full'
+                className='border-2 border-pink-500 w-full text-neutral-800 placeholder-neutral-400'
                 type='text'
                 name='subject'
               />
@@ -110,7 +110,7 @@ export default function Contact() {
           <div className='flex flex-col mt-2 w-full'>
             <label htmlFor=''>Message</label>
             <input
-              className='w-full h-40 border-2 rounded-xs border-pink-500'
+              className='w-full h-40 border-2 rounded-xs border-pink-500 text-neutral-800 placeholder-neutral-400'
               name='message'
             ></input>
           </div>
