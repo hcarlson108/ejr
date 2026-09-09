@@ -76,22 +76,22 @@ export default function Contact() {
           />
         </div>
       </div>
-      <form onSubmit={onSubmit}>
-        <div className='flex flex-col justify-center items-center text-sm text-shadow-2xs lg:w-4/5'>
-          <div className='lg:w-2/3'>
-            <div className='flex mt-6 space-x-8 space-y-2'>
-              <div className='flex flex-col'>
-                <label htmlFor=''>First Name</label>
+      <form onSubmit={onSubmit} className='w-90 lg:w-2/3'>
+        <div className='flex flex-col justify-center items-center text-sm text-shadow-2xs w-full'>
+          <div className='w-full'>
+            <div className='flex mt-6 space-x-4 space-y-2'>
+              <div className='flex flex-col flex-1'>
+                <label htmlFor=''>First</label>
                 <input
-                  className='border-2 border-neutral-500 w-40'
+                  className='border-2 border-pink-500 w-full'
                   type='text'
                   name='firstName'
                 />
               </div>
-              <div className='flex flex-col'>
-                <label htmlFor=''>Last Name</label>
+              <div className='flex flex-col flex-1'>
+                <label htmlFor=''>Last</label>
                 <input
-                  className='border-2 border-pink-500 w-40'
+                  className='border-2 border-pink-500 w-full'
                   type='text'
                   name='lastName'
                 />
@@ -101,16 +101,16 @@ export default function Contact() {
             <div className='flex flex-col mt-2'>
               <label htmlFor=''>Subject</label>
               <input
-                className='border-2 border-pink-500 w-88 lg:w-90'
+                className='border-2 border-pink-500 w-full'
                 type='text'
                 name='subject'
               />
             </div>
           </div>
-          <div className='flex flex-col mt-2 lg:w-90'>
+          <div className='flex flex-col mt-2 w-full'>
             <label htmlFor=''>Message</label>
             <input
-              className='w-80 h-40 border-2 rounded-xs border-pink-500 lg:w-136'
+              className='w-full h-40 border-2 rounded-xs border-pink-500'
               name='message'
             ></input>
           </div>
@@ -129,10 +129,6 @@ export default function Contact() {
           </div>
         </div>
       </form>
-    
-        <span class='absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all'></span>
-  
-
     </div>
   );
 }

@@ -1,10 +1,12 @@
 'use client';
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
 import Nav from '../components/Nav';
 import Hello from '../components/Hello';
-import Resume from '../components/Resume';
 import Personal from '../components/Content';
 import Contact from '../components/Contact';
+
+const Resume = dynamic(() => import('../components/Resume'), { ssr: false });
 
 type Tabs = 'hello!' | 'resume' | 'content' | 'contact';
 
