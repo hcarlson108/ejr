@@ -36,7 +36,7 @@ export default function Contact() {
 
   return (
     <div className='flex flex-col justify-center items-center min-h-0 w-full lg:w-2/3'>
-      <div className='flex justify-between items-center h-full bg-pink-400 text-white rounded-2xl w-90 lg:w-2/3'>
+      <div className='flex justify-between items-center h-full bg-pink-400 text-white rounded-2xl w-full max-w-90 lg:w-2/3 lg:max-w-none'>
         <div className='text-sm lg:text-lg'>
           <Link
             href='https://tinyurl.com/3bydtj3z'
@@ -76,7 +76,7 @@ export default function Contact() {
           />
         </div>
       </div>
-      <form onSubmit={onSubmit} className='w-90 lg:w-2/3'>
+      <form onSubmit={onSubmit} className='w-full max-w-90 lg:w-2/3 lg:max-w-none'>
         <div className='flex flex-col justify-center items-center text-sm text-shadow-2xs w-full'>
           <div className='w-full'>
             <div className='flex mt-6 space-x-4 space-y-2'>

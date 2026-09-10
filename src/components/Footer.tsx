@@ -48,7 +48,10 @@ export default function Footer() {
 
       <div className='text-xs text-neutral-400 text-center'>
         <p>&copy; {year} Emma Joyce Radtke. All rights reserved.</p>
-        <p>website by Hayden Carlson</p>
+        <p>
+          website by{' '}
+          <Link href='https://github.com/hcarlson108'>hcarlson108</Link>
+        </p>
       </div>
     </div>
   );
